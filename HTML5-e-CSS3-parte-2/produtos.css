@@ -1,0 +1,103 @@
+header {
+  background: #bbbbbb;
+  padding: 20px;
+}
+
+.caixa {
+  margin: auto;
+  /* criado a posição relativa para deixar a nav dentro da caixa */
+  position: relative;
+  width: 940px;
+}
+
+nav {
+  /* para posição ser aplicada dentro de algum elemento o pai preceisa ter a posição relativo */
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.produtos {
+  margin: 0 auto;
+  width: 940px;
+  padding: 50px 0;
+}
+
+.produtos li {
+  display: inline-block;
+  margin: 0 1,5%;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  /* 
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  */
+  /* declaração borda simplificada width + style + color */
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+/* :hover - Evento ao passar o mouse por cima */
+.produtos li:hover {
+  border-color: #C78C19;
+}
+
+/* :active - Evento ao clicar com mouse */
+.produtos li:active {
+  border-color: #088c19;
+}
+
+/* Após :hover pode colocar o elemento que pretende alterar com a ação */
+.produtos li:hover h2 {
+  font-size: 34px;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produto-descricao {
+  font-size: 18px;
+}
+
+.produto-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  background: url(bg.jpg);
+  /* Padding quando colocamos dois valores será aplicado o primeiro para cima e para baixo e o segundo para ambos os lados */
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
