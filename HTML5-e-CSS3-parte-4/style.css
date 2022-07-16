@@ -1,0 +1,305 @@
+body {
+  /* Fonte externa preparada para web https://fonts.google.com/ */
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: #bbbbbb;
+  padding: 20px;
+}
+
+.caixa {
+  margin: auto;
+  /* criado a posição relativa para deixar a nav dentro da caixa */
+  position: relative;
+  width: 940px;
+}
+
+nav {
+  /* para posição ser aplicada dentro de algum elemento o pai preceisa ter a posição relativo */
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.produtos {
+  margin: 0 auto;
+  width: 940px;
+  padding: 50px 0;
+}
+
+.produtos li {
+  display: inline-block;
+  margin: 0 1,5%;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  /* 
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  */
+  /* declaração borda simplificada width + style + color */
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+/* :hover - Evento ao passar o mouse por cima */
+.produtos li:hover {
+  border-color: #C78C19;
+}
+
+/* :active - Evento ao clicar com mouse */
+.produtos li:active {
+  border-color: #088c19;
+}
+
+/* Após :hover pode colocar o elemento que pretende alterar com a ação */
+.produtos li:hover h2 {
+  font-size: 34px;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produto-descricao {
+  font-size: 18px;
+}
+
+.produto-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  background: url(bg.jpg);
+  /* Padding quando colocamos dois valores será aplicado o primeiro para cima e para baixo e o segundo para ambos os lados */
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
+
+main {
+  /* width: 940px; */
+  /* margin: 0 auto; */
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label, form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  /* transition: 1s background; */
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
+  transform: scale(1.2);
+  /* transform: rotate(70deg); */
+  /* parra usar o dois elementos temos que colocar na mesma linha */
+  /* transform: rotate(70deg) scale(1.2); */
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
+/* css da página inicial */
+.banner {
+  width: 100%;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+  /* opacidade em corres usando RGBA
+  color: rgba(0, 0, 0, 0.3); */
+  /* sombra para textos  */
+  /* text-shadow: 2px 2px 2px #FF0000; */
+}
+
+.principal {
+  padding: 3em 0;
+  background: #FEFEFE;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa {
+  padding: 3em 0;
+  /* background: radial-gradient(orange, blue); */
+  background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.beneficios {
+  padding: 3em 0;
+  background: #888888;
+  /* Sombra externa */
+  /* box-shadow: inset 0 0 30px #000000; */
+}
+
+.conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.itens {
+  line-height: 1.5;
+}
+
+/* Primeiro item com destaque */
+.itens:first-child {
+  font-weight: bold;
+}
+
+/* ultimo item com destaque  */
+/* .itens:last-child {
+  font-weight: bold;
+} */
+
+/* Escolher o numero da lista com destaque  */
+/* .itens:nth-child(2) {
+  font-weight: bold;
+} */
+
+.itens:before {
+  content: "✭";
+}
+
+.imagem-beneficios {
+  width: 60%;
+  transition: 400ms;
+  opacity: 1;
+  /* Sombras = X + Y + Transição + Intencidade */
+  box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+  opacity: 0.3;
+}
+
+.video {
+  width: 560px;
+  margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+
+  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .lista-beneficios, .imagem-beneficios {
+    width: 100%;
+  }
+}
